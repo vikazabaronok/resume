@@ -7,9 +7,13 @@
     <title>Victoria Zabaronok Resume</title>
     <meta name="description" content="Это сайт-резюме Виктории Забаронок.">
     <meta name="keywords" content="html, css, resume, victoria">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <img src="IMG_2938.JPG" width="160" alt="victoria zabaronok">
+    <div class="container">
+    <div class="info">
+    <img src="IMG_2938.JPG" alt="victoria zabaronok" class="avatar">
+    <div class="info-text">
     <h1>Виктория Забаронок</h1>
     <p>Я работала <strong>Интернет-маркетологом</strong> в компании ООО "Кухни ММ"</p>
     <p>В свободное время <em>занимаюсь спортом KrossFit, изучаю английский язык, читаю книги, играю на фортепиано.</em> Люблю активный отдых и путешествия.</p>
@@ -17,16 +21,22 @@
         <a href="https://instagram.com/victoria_zabaronok?utm_medium=copy_link" target="_blank">Instagram</a>
         |
         <a href="https://t.me/vika_ax" target="_blank">Telegram</a>
+    </div> 
+    </div>
+    <div class="card bg-yellow">
     <h2>Мои хобби</h2>
-    <ol>
+    <ol class="list">
         <li>Путешествия</li>
         <li>Спорт</li>
         <li>Чтение книг</li>
         <li>Сноуборд</li>
         <li>Фотографии</li>
     </ol>
+    </div>
+    <div class="card bg-red">
     <h2>Опыт работы</h2>
-    <table>
+    <table class="table">
+        <!--
         <thead>
             <tr>
                 <th>Название</th>
@@ -34,11 +44,12 @@
                 <th>Год</th>
             </tr>
         </thead>
+         -->
         <tbody>
             <tr>
                 <td>ИП Богославская</td>
                 <td>Старший администратор</td>
-                <td>2017-2019</td>
+                <td>2017-2019</td> 
             </tr>
             <tr>
                 <td>ОДО Планета Мебели</td>
@@ -52,25 +63,30 @@
             </tr>
         </tbody> 
     </table>
-<h2>Связаться со мной</h2>
-<form>
-    <div>
+    </div>
+
+<div class="card bg-green">
+<form class="form">
+    <h2>Связаться со мной</h2>
+    <div class="form-row">
+    <div class="form-group">
     <label for="name">Ваше имя</label>
     <input type="name" id="name" placeholder="Введите имя"></input>
     </div>
-    <div>
+    <div class="form-group">
         <label for="email">Ваш email</label>
         <input type="email" id="email" placeholder="Введите email"> </input>
     </div>
-    <div>
+    </div>
+    <div class="form-group">
         <label for="message">Ваше сообщение:</label>
-        <br>
         <textarea id="message" cols="20" rows="5" placeholder="Введите сообщение..."></textarea>
     </div>
     <div>
-        <input type="submit" value="Отправить!">
+        <button class="btn" type="submit" >Отправить!</button>
     </div>
-</form>
-
+ </form>
+ </div>
+ </div>
 </body>
 </html> 
